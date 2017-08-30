@@ -1,0 +1,7 @@
+platform :ios, “8.0”
+use_frameworks!
+
+target 'DocumentDown' do
+pod 'Alamofire', '~> 4.0'
+pod 'SnapKit', '~> 3.0.2'
+end
