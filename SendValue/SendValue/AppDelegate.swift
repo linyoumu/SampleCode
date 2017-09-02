@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SendValue
 //
-//  Created by lisonglin on 14/04/2017.
-//  Copyright © 2017 lisonglin. All rights reserved.
+//  Created by Myfly on 14/04/2017.
+//  Copyright © 2017 Myfly. All rights reserved.
 //
 
 import UIKit

@@ -2,8 +2,8 @@
 //  DetailViewController.swift
 //  SendValue
 //
-//  Created by lisonglin on 14/04/2017.
-//  Copyright © 2017 lisonglin. All rights reserved.
+//  Created by Myfly on 14/04/2017.
+//  Copyright © 2017 Myfly. All rights reserved.
 //
 
 import UIKit
@@ -67,19 +67,20 @@ class DetailViewController: UIViewController {
     
     func backBtnClick()  {
         
-        //代理
-//        if delegate != nil {
-//            delegate?.getMssage(string: self.textField.text!)
-//            _ = self.navigationController?.popViewController(animated: true)
-//
-//        }
+        //代理传值
+        if delegate != nil {
+            delegate?.getMssage(string: self.textField.text!)
+            _ = self.navigationController?.popViewController(animated: true)
+
+        }
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue:"NotificationName"), object: nil, userInfo: ["value":self.textField.text ?? "i am a default Value"])
+        //闭包传值
+        if self.myColsure != nil {
+            self.myColsure!(self.textField.text!)
+        }
         
-//        if self.myColsure != nil {
-//            self.myColsure!(self.textField.text!)
-//        }
-        
+        // 通知传值
+        //NotificationCenter.default.post(name: NSNotification.Name(rawValue:"NotificationName"), object: nil, userInfo: ["value":self.textField.text ?? "i am a default Value"])
         
         _ = self.navigationController?.popViewController(animated: true)
     }
@@ -87,7 +88,5 @@ class DetailViewController: UIViewController {
     func getMssage(string: String) {
         print(string)
     }
-    
-    
 
 }
