@@ -1,0 +1,6 @@
+framework module Pods_SwiftGrammar {
+  umbrella header "Pods-SwiftGrammar-umbrella.h"
+
+  export *
+  module * { export * }
+}
