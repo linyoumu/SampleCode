@@ -9,7 +9,7 @@
 import UIKit
 
 import Alamofire
-
+import MJExtension
 enum requestType {
     case get
     case post

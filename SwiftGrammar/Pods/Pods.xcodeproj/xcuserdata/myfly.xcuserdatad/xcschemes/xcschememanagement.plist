@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwiftGrammar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2E3F00A509DEDECD9D35E3D8699E364D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48D79B17D35366A4289529EF1CB4E812</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AA17C95E926B760FD08E0B487DAEFA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C46A27B88DC485D480E331B8F0D0D6EE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F4500DFE6C99B2D3F248160BF1051D6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

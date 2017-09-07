@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bYP-zp-fn6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DVImageBrowserVCDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRd-Tv-lde">
+                                <rect key="frame" x="111" y="318" width="152" height="30"/>
+                                <state key="normal" title="push带删除(网络图片)"/>
+                                <connections>
+                                    <action selector="showImage1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6o7-Q5-DaW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Aw-Gf-Ruh">
+                                <rect key="frame" x="147" y="280" width="80" height="30"/>
+                                <state key="normal" title="push无删除"/>
+                                <connections>
+                                    <action selector="showImage0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByN-cF-fTf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="use-Oc-Hc7">
+                                <rect key="frame" x="143" y="356" width="88" height="30"/>
+                                <state key="normal" title="modal无删除"/>
+                                <connections>
+                                    <action selector="showImage2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5qc-pY-16X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sK-CY-jie">
+                                <rect key="frame" x="107" y="394" width="160" height="30"/>
+                                <state key="normal" title="modal带删除(网络图片)"/>
+                                <connections>
+                                    <action selector="showImage3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DvS-TM-Euu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QRd-Tv-lde" firstAttribute="top" secondItem="9Aw-Gf-Ruh" secondAttribute="bottom" constant="8" id="XvK-BE-Jmk"/>
+                            <constraint firstItem="QRd-Tv-lde" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zyt-BI-sjm"/>
+                            <constraint firstItem="QRd-Tv-lde" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aYm-nW-m2l"/>
+                            <constraint firstItem="7sK-CY-jie" firstAttribute="top" secondItem="use-Oc-Hc7" secondAttribute="bottom" constant="8" id="e9n-jL-jQN"/>
+                            <constraint firstItem="9Aw-Gf-Ruh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jl0-f6-AEg"/>
+                            <constraint firstItem="7sK-CY-jie" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lkI-TA-tx2"/>
+                            <constraint firstItem="use-Oc-Hc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oWF-9j-Tti"/>
+                            <constraint firstItem="use-Oc-Hc7" firstAttribute="top" secondItem="QRd-Tv-lde" secondAttribute="bottom" constant="8" id="u4s-ec-B0W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="ZfY-zi-Vho"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-559"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j9N-cG-ehY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bYP-zp-fn6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="76J-eg-glM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QXd-9c-irp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eka-4g-oln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="-559.07046476761627"/>
+        </scene>
+    </scenes>
+</document>
