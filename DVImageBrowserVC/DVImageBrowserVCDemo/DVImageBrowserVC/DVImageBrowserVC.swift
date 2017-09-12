@@ -75,6 +75,7 @@ class DVImageBrowserVC: UIViewController {
     /// 图片集合，可以传入图片数组或者字符串数组，其他无效
     fileprivate var images: [Any]? {
         didSet {
+            print("didSet  \(images?.count)")
             self.imageCollection.reloadData()
             self.pageControl.numberOfPages = images?.count ?? 0
             if self.index >= images?.count ?? 1 {
@@ -83,6 +84,9 @@ class DVImageBrowserVC: UIViewController {
                 self.index = 0
             }
             self.imageCollection.setContentOffset(CGPoint(x: (CGFloat)(self.index)*UIScreen.main.bounds.width, y: 0), animated: false)
+        }
+        willSet{
+            print("willSet  \(images?.count)")
         }
     }
     /// 当前正在显示的图片的索引
