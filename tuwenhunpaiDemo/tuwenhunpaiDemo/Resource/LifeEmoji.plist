@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>[ax]</key>
+	<string>爱心.gif</string>
+	<key>[bz]</key>
+	<string>帮助.gif</string>
+	<key>[bhys]</key>
+	<string>不好意思.gif</string>
+	<key>[bmb]</key>
+	<string>不明白.gif</string>
+	<key>[dai]</key>
+	<string>呆.gif</string>
+	<key>[fhbl]</key>
+	<string>发红包了.gif</string>
+	<key>[fh]</key>
+	<string>发货.gif</string>
+	<key>[fan]</key>
+	<string>烦.gif</string>
+	<key>[haha]</key>
+	<string>哈哈.gif</string>
+	<key>[han]</key>
+	<string>汗.gif</string>
+	<key>[hxx]</key>
+	<string>好消息.gif</string>
+	<key>[jd]</key>
+	<string>鸡冻.gif</string>
+	<key>[jy]</key>
+	<string>加油.gif</string>
+	<key>[jx]</key>
+	<string>奸笑.gif</string>
+	<key>[mmd]</key>
+	<string>萌萌哒.gif</string>
+	<key>[nzb]</key>
+	<string>你最棒.gif</string>
+	<key>[nu]</key>
+	<string>怒.gif</string>
+	<key>[lyg]</key>
+	<string>亲一个.gif</string>
+	<key>[sq]</key>
+	<string>生气.gif</string>
+	<key>[sb]</key>
+	<string>帅不.gif</string>
+	<key>[sh]</key>
+	<string>送花.gif</string>
+	<key>[slw]</key>
+	<string>送礼物.gif</string>
+	<key>[wa]</key>
+	<string>晚安.gif</string>
+	<key>[xia]</key>
+	<string>吓.gif</string>
+	<key>[xx]</key>
+	<string>谢谢.gif</string>
+	<key>[ym]</key>
+	<string>郁闷.gif</string>
+	<key>[yun]</key>
+	<string>晕.gif</string>
+	<key>[zj]</key>
+	<string>再见.gif</string>
+	<key>[ok]</key>
+	<string>OK.gif</string>
+</dict>
+</plist>
