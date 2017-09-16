@@ -43,13 +43,6 @@
 
 + (NSMutableAttributedString *)swapAttributeString:(NSString *)content gifNames:(NSArray *) gifNames
 {
-    //    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    //
-    //    NSString *content;
-    //    NSArray *gifNames;
-    //
-    //    content = [userDefaults objectForKey:kSKGSendPostContent];
-    //    gifNames = [userDefaults objectForKey:kSKGSendPostGifName];
     NSMutableAttributedString *lastAttributedString = nil;
     if (content) {
         lastAttributedString = [[NSMutableAttributedString alloc] initWithString:content];
