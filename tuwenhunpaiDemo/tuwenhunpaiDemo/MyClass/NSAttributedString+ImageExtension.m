@@ -7,9 +7,6 @@
 //
 
 #import "NSAttributedString+ImageExtension.h"
-#import "LinTextAttachment.h"
-#import "LinHybridTextView.h"
-#import "LinEmojiTool.h"
 
 @implementation NSAttributedString (ImageExtension)
 

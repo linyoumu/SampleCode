@@ -6,22 +6,21 @@
 //  Copyright © 2017年 Myfly. All rights reserved.
 //
 
-#define TextViewFont [UIFont systemFontOfSize:15]
-#define PlaceholerTextColor [UIColor lightGrayColor]
-
 #import "LinHybridTextView.h"
-#import "NSAttributedString+ImageExtension.h"
-#import "LinGifIamgeView.h"
-#import "UIImage+GIF.h"
+#import "LinInputAccessoryView.h"
+#import "LinFaceViewContainer.h"
 
-
-@interface LinHybridTextView ()
-
+@interface LinHybridTextView ()<LinInputAccessoryViewDelegate, DXFaceDelegate, LinFaceViewDelegate>
+{
+    NSRange _currentRange;
+}
 @property (weak, nonatomic) UILabel *placeholderLabel;
 @property (weak, nonatomic) UIButton *accessoryView;
 @property (weak, nonatomic) UIImageView *leftAccessoryView;
-
 @property (nonatomic, strong) NSMutableArray *gifImageViews;
+
+@property (nonatomic, strong) LinInputAccessoryView *inputAccessory;
+@property (nonatomic, strong) LinFaceViewContainer *faceViewContainer;
 
 @end
 
@@ -38,6 +37,8 @@
         [self buildPlaceholderLabel];
         
         [self buildAccessoryView];
+        
+        [self setupFaceView];
     }
     return self;
 }
@@ -49,6 +50,9 @@
     [self buildPlaceholderLabel];
     
     [self buildAccessoryView];
+    
+    [self setupFaceView];
+    
 }
 
 - (void)dealloc
@@ -103,6 +107,16 @@
     leftAccessoryView.hidden = YES;
     [self insertSubview:leftAccessoryView atIndex:0];
     self.leftAccessoryView = leftAccessoryView;
+    
+    self.inputAccessoryView = self.inputAccessory;
+}
+
+- (void)setupFaceView
+{
+    self.faceViewContainer = [LinFaceViewContainer faceView];
+    self.faceViewContainer.delegate = (id<LinFaceViewContainerDelegate>)self;
+    self.faceViewContainer.emojiView.delegate = self;
+    self.faceViewContainer.faceView.faceDelegate = self;
 }
 
 #pragma mark - LayoutSubviews
@@ -159,6 +173,70 @@
     }];
 }
 
+#pragma mark - LinInputAccessoryViewDelegate
+
+- (void)handleInputComplete
+{
+    [self resignFirstResponder];
+}
+
+- (void)handleChangeInputModeWithButton:(UIButton *)button
+{
+    button.selected = !button.selected;
+    if (button.selected) {
+        self.inputView = self.faceViewContainer;
+    } else {
+        self.inputView = nil;
+    }
+    [UIView animateWithDuration:0.25f animations:^{
+        [self reloadInputViews];
+    }];
+}
+
+#pragma mark - DXFaceDelegate
+- (void)selectedFacialView:(NSString *)str isDelete:(BOOL)isDelete
+{
+    //    NSString *chatText = _contentTextView.text;
+    //    NSRange selectedRange = _contentTextView.selectedRange;
+    //    if (str.length > 0) {
+    //        _contentTextView.text = [chatText stringByReplacingCharactersInRange:selectedRange withString:str];
+    //        [_contentTextView setSelectedRange:NSMakeRange(selectedRange.location + str.length - selectedRange.length, 0)];
+    //        [self textViewDidChange:self.contentTextView];
+    //    }
+    _currentRange = self.selectedRange;
+    self.attributedText = [NSMutableAttributedString stringTextAttachmentWithAttributedString:self.attributedText faceString:str location:self.selectedRange.location];
+    self.selectedRange = NSMakeRange(_currentRange.location + str.length, 0);
+    //
+}
+
+#pragma mark - SKGFaceViewContainerDelegate
+- (void)faceViewContainerDidClickDeleteButton:(LinFaceViewContainer *)container
+{
+    [self deleteBackward];
+}
+
+#pragma mark - SKGFaceViewDelegate
+- (void)faceViewDidSelectFaceName:(NSString *)faceName
+{
+    NSMutableArray *gifNames = [self.attributedText getAttachmentGifImageNames];
+    if (gifNames.count > 12) {
+        [self showAlertViewWithTitle:nil message:[NSString stringWithFormat:@"最多只能添加12张动态表情图片"] cancelTitle:nil otherTitle:@"确定" viewTag:0];
+        return;
+    }
+    NSRange currentRange = self.selectedRange;
+    self.attributedText = [NSMutableAttributedString gifImageTextAttachmentWithAttributedString:self.attributedText faceName:faceName location:self.selectedRange.location];
+    self.selectedRange = NSMakeRange(currentRange.location + 3, 0);
+    [self resetGifImageViews];
+}
+
+
+#pragma mark -showAlertView
+- (void)showAlertViewWithTitle:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancleTitle otherTitle:(NSString *)otherTitle viewTag:(NSInteger)tag
+{
+    UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:title message:message delegate:self cancelButtonTitle:cancleTitle otherButtonTitles:otherTitle, nil];
+    alertView.tag = tag;
+    [alertView show];
+}
 
 #pragma mark - 设置文字
 - (void)setPlaceholder:(NSString *)placeholder
@@ -242,6 +320,16 @@
     [super setAttributedText:attributedText];
     [self textDidChange];
 }
+
+- (LinInputAccessoryView *)inputAccessory{
+    if (!_inputAccessory) {
+        _inputAccessory = [[LinInputAccessoryView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 46)];
+        _inputAccessory.delegate = (id<LinInputAccessoryViewDelegate>)self;
+        _inputAccessory.hanHiddenImage = YES;
+    }
+    return _inputAccessory;
+}
+
 
 
 @end

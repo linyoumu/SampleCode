@@ -7,9 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "NSString+Length.h"
-#import "LinHybridTextView.h"
-#import "LinTextAttachment.h"
 
 @interface ViewController ()<UITextViewDelegate>
 
@@ -40,7 +37,7 @@
 - (LinHybridTextView *)contentTextView
 {
     if (!_contentTextView) {
-        _contentTextView = [[LinHybridTextView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 100)];
+        _contentTextView = [[LinHybridTextView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 200)];
         _contentTextView.placeholder = @"描述内容";
         _contentTextView.placeholderColor = [UIColor lightGrayColor];
         _contentTextView.textColor = [UIColor blackColor];

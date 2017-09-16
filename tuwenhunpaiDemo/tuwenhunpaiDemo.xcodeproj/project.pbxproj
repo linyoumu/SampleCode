@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC4923C1F6CB6F8009A1068 /* LinInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4923B1F6CB6F8009A1068 /* LinInputAccessoryView.m */; };
+		1FC492411F6CBA72009A1068 /* UIColor+for16.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492401F6CBA72009A1068 /* UIColor+for16.m */; };
+		1FC492481F6CBBFA009A1068 /* UIView+Additon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492471F6CBBFA009A1068 /* UIView+Additon.m */; };
+		1FC4924B1F6CBFFE009A1068 /* life_post_selected_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC492491F6CBFFE009A1068 /* life_post_selected_image@2x.png */; };
+		1FC4924C1F6CBFFE009A1068 /* life_post_selected_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4924A1F6CBFFE009A1068 /* life_post_selected_image@3x.png */; };
+		1FC4924F1F6CC015009A1068 /* life_addCommentDock_emoji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4924D1F6CC015009A1068 /* life_addCommentDock_emoji@2x.png */; };
+		1FC492501F6CC015009A1068 /* life_addCommentDock_emoji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4924E1F6CC015009A1068 /* life_addCommentDock_emoji@3x.png */; };
+		1FC492531F6CC025009A1068 /* life_addCommentDock_keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC492511F6CC025009A1068 /* life_addCommentDock_keyboard@2x.png */; };
+		1FC492541F6CC025009A1068 /* life_addCommentDock_keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC492521F6CC025009A1068 /* life_addCommentDock_keyboard@3x.png */; };
+		1FC492571F6CC2CF009A1068 /* LinFaceViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492561F6CC2CF009A1068 /* LinFaceViewContainer.m */; };
+		1FC4925C1F6CC3D2009A1068 /* DXFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492591F6CC3D2009A1068 /* DXFaceView.m */; };
+		1FC4925D1F6CC3D2009A1068 /* FacialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4925B1F6CC3D2009A1068 /* FacialView.m */; };
+		1FC492631F6CC420009A1068 /* Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492601F6CC420009A1068 /* Emoji.m */; };
+		1FC492641F6CC420009A1068 /* EmojiEmoticons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492621F6CC420009A1068 /* EmojiEmoticons.m */; };
+		1FC492671F6CC518009A1068 /* LinFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492661F6CC518009A1068 /* LinFaceView.m */; };
+		1FC4926A1F6CC5B7009A1068 /* LinFaceViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492691F6CC5B7009A1068 /* LinFaceViewCell.m */; };
+		1FC4926D1F6CC649009A1068 /* LinFaceViewCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4926C1F6CC649009A1068 /* LinFaceViewCellButton.m */; };
+		1FC492731F6CC813009A1068 /* UIImage+CreatedSingleColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492721F6CC813009A1068 /* UIImage+CreatedSingleColorImage.m */; };
+		1FC492761F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492751F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.m */; };
+		1FC492791F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC492781F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.m */; };
+		1FC4927C1F6CCB9A009A1068 /* UIImage+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4927B1F6CCB9A009A1068 /* UIImage+Compression.m */; };
+		1FC4927F1F6CD16F009A1068 /* life_emojiPanel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4927D1F6CD16F009A1068 /* life_emojiPanel@2x.png */; };
+		1FC492801F6CD16F009A1068 /* life_emojiPanel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4927E1F6CD16F009A1068 /* life_emojiPanel@3x.png */; };
+		1FC492831F6CD182009A1068 /* life_facePanel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC492811F6CD182009A1068 /* life_facePanel@2x.png */; };
+		1FC492841F6CD182009A1068 /* life_facePanel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC492821F6CD182009A1068 /* life_facePanel@3x.png */; };
+		1FC492871F6CD18F009A1068 /* FaceViewDeleteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC492851F6CD18F009A1068 /* FaceViewDeleteIcon@2x.png */; };
+		1FC492881F6CD18F009A1068 /* FaceViewDeleteIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC492861F6CD18F009A1068 /* FaceViewDeleteIcon@3x.png */; };
 		1FFEC4A41F6A07BF004D55A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEC4A31F6A07BF004D55A7 /* main.m */; };
 		1FFEC4A71F6A07BF004D55A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEC4A61F6A07BF004D55A7 /* AppDelegate.m */; };
 		1FFEC4AA1F6A07BF004D55A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEC4A91F6A07BF004D55A7 /* ViewController.m */; };
@@ -83,6 +110,50 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FC4923A1F6CB6F8009A1068 /* LinInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinInputAccessoryView.h; sourceTree = "<group>"; };
+		1FC4923B1F6CB6F8009A1068 /* LinInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinInputAccessoryView.m; sourceTree = "<group>"; };
+		1FC4923D1F6CB840009A1068 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		1FC4923F1F6CBA72009A1068 /* UIColor+for16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+for16.h"; sourceTree = "<group>"; };
+		1FC492401F6CBA72009A1068 /* UIColor+for16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+for16.m"; sourceTree = "<group>"; };
+		1FC492421F6CBAD1009A1068 /* LinGlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinGlobalConfig.h; sourceTree = "<group>"; };
+		1FC492461F6CBBFA009A1068 /* UIView+Additon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additon.h"; sourceTree = "<group>"; };
+		1FC492471F6CBBFA009A1068 /* UIView+Additon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additon.m"; sourceTree = "<group>"; };
+		1FC492491F6CBFFE009A1068 /* life_post_selected_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_post_selected_image@2x.png"; sourceTree = "<group>"; };
+		1FC4924A1F6CBFFE009A1068 /* life_post_selected_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_post_selected_image@3x.png"; sourceTree = "<group>"; };
+		1FC4924D1F6CC015009A1068 /* life_addCommentDock_emoji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_addCommentDock_emoji@2x.png"; sourceTree = "<group>"; };
+		1FC4924E1F6CC015009A1068 /* life_addCommentDock_emoji@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_addCommentDock_emoji@3x.png"; sourceTree = "<group>"; };
+		1FC492511F6CC025009A1068 /* life_addCommentDock_keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_addCommentDock_keyboard@2x.png"; sourceTree = "<group>"; };
+		1FC492521F6CC025009A1068 /* life_addCommentDock_keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_addCommentDock_keyboard@3x.png"; sourceTree = "<group>"; };
+		1FC492551F6CC2CF009A1068 /* LinFaceViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinFaceViewContainer.h; sourceTree = "<group>"; };
+		1FC492561F6CC2CF009A1068 /* LinFaceViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinFaceViewContainer.m; sourceTree = "<group>"; };
+		1FC492581F6CC3D2009A1068 /* DXFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXFaceView.h; sourceTree = "<group>"; };
+		1FC492591F6CC3D2009A1068 /* DXFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXFaceView.m; sourceTree = "<group>"; };
+		1FC4925A1F6CC3D2009A1068 /* FacialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacialView.h; sourceTree = "<group>"; };
+		1FC4925B1F6CC3D2009A1068 /* FacialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacialView.m; sourceTree = "<group>"; };
+		1FC4925F1F6CC420009A1068 /* Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emoji.h; sourceTree = "<group>"; };
+		1FC492601F6CC420009A1068 /* Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emoji.m; sourceTree = "<group>"; };
+		1FC492611F6CC420009A1068 /* EmojiEmoticons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiEmoticons.h; sourceTree = "<group>"; };
+		1FC492621F6CC420009A1068 /* EmojiEmoticons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiEmoticons.m; sourceTree = "<group>"; };
+		1FC492651F6CC518009A1068 /* LinFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinFaceView.h; sourceTree = "<group>"; };
+		1FC492661F6CC518009A1068 /* LinFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinFaceView.m; sourceTree = "<group>"; };
+		1FC492681F6CC5B7009A1068 /* LinFaceViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinFaceViewCell.h; sourceTree = "<group>"; };
+		1FC492691F6CC5B7009A1068 /* LinFaceViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinFaceViewCell.m; sourceTree = "<group>"; };
+		1FC4926B1F6CC649009A1068 /* LinFaceViewCellButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinFaceViewCellButton.h; sourceTree = "<group>"; };
+		1FC4926C1F6CC649009A1068 /* LinFaceViewCellButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinFaceViewCellButton.m; sourceTree = "<group>"; };
+		1FC492711F6CC813009A1068 /* UIImage+CreatedSingleColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CreatedSingleColorImage.h"; sourceTree = "<group>"; };
+		1FC492721F6CC813009A1068 /* UIImage+CreatedSingleColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CreatedSingleColorImage.m"; sourceTree = "<group>"; };
+		1FC492741F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSNewFrameLayoutView.h"; sourceTree = "<group>"; };
+		1FC492751F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSNewFrameLayoutView.m"; sourceTree = "<group>"; };
+		1FC492771F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+TextAttachment.h"; sourceTree = "<group>"; };
+		1FC492781F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+TextAttachment.m"; sourceTree = "<group>"; };
+		1FC4927A1F6CCB9A009A1068 /* UIImage+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compression.h"; sourceTree = "<group>"; };
+		1FC4927B1F6CCB9A009A1068 /* UIImage+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compression.m"; sourceTree = "<group>"; };
+		1FC4927D1F6CD16F009A1068 /* life_emojiPanel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_emojiPanel@2x.png"; sourceTree = "<group>"; };
+		1FC4927E1F6CD16F009A1068 /* life_emojiPanel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_emojiPanel@3x.png"; sourceTree = "<group>"; };
+		1FC492811F6CD182009A1068 /* life_facePanel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_facePanel@2x.png"; sourceTree = "<group>"; };
+		1FC492821F6CD182009A1068 /* life_facePanel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "life_facePanel@3x.png"; sourceTree = "<group>"; };
+		1FC492851F6CD18F009A1068 /* FaceViewDeleteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FaceViewDeleteIcon@2x.png"; sourceTree = "<group>"; };
+		1FC492861F6CD18F009A1068 /* FaceViewDeleteIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FaceViewDeleteIcon@3x.png"; sourceTree = "<group>"; };
 		1FFEC49F1F6A07BF004D55A7 /* tuwenhunpaiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tuwenhunpaiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFEC4A31F6A07BF004D55A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FFEC4A51F6A07BF004D55A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -212,6 +283,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FC492391F6CB5DC009A1068 /* FaceView */ = {
+			isa = PBXGroup;
+			children = (
+				1FC4925E1F6CC420009A1068 /* Emoji */,
+				1FC492551F6CC2CF009A1068 /* LinFaceViewContainer.h */,
+				1FC492561F6CC2CF009A1068 /* LinFaceViewContainer.m */,
+				1FC492581F6CC3D2009A1068 /* DXFaceView.h */,
+				1FC492591F6CC3D2009A1068 /* DXFaceView.m */,
+				1FC4925A1F6CC3D2009A1068 /* FacialView.h */,
+				1FC4925B1F6CC3D2009A1068 /* FacialView.m */,
+				1FC492651F6CC518009A1068 /* LinFaceView.h */,
+				1FC492661F6CC518009A1068 /* LinFaceView.m */,
+				1FC492681F6CC5B7009A1068 /* LinFaceViewCell.h */,
+				1FC492691F6CC5B7009A1068 /* LinFaceViewCell.m */,
+				1FC4926B1F6CC649009A1068 /* LinFaceViewCellButton.h */,
+				1FC4926C1F6CC649009A1068 /* LinFaceViewCellButton.m */,
+			);
+			path = FaceView;
+			sourceTree = "<group>";
+		};
+		1FC4923E1F6CB8EE009A1068 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				1FC492771F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.h */,
+				1FC492781F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.m */,
+				1FC492741F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.h */,
+				1FC492751F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.m */,
+				1FC492711F6CC813009A1068 /* UIImage+CreatedSingleColorImage.h */,
+				1FC492721F6CC813009A1068 /* UIImage+CreatedSingleColorImage.m */,
+				1FC4927A1F6CCB9A009A1068 /* UIImage+Compression.h */,
+				1FC4927B1F6CCB9A009A1068 /* UIImage+Compression.m */,
+				1FC4923F1F6CBA72009A1068 /* UIColor+for16.h */,
+				1FC492401F6CBA72009A1068 /* UIColor+for16.m */,
+				1FC492461F6CBBFA009A1068 /* UIView+Additon.h */,
+				1FC492471F6CBBFA009A1068 /* UIView+Additon.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		1FC4925E1F6CC420009A1068 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				1FC4925F1F6CC420009A1068 /* Emoji.h */,
+				1FC492601F6CC420009A1068 /* Emoji.m */,
+				1FC492611F6CC420009A1068 /* EmojiEmoticons.h */,
+				1FC492621F6CC420009A1068 /* EmojiEmoticons.m */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
 		1FFEC4961F6A07BE004D55A7 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +352,8 @@
 		1FFEC4A11F6A07BF004D55A7 /* tuwenhunpaiDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1FC4923E1F6CB8EE009A1068 /* category */,
+				1FC492391F6CB5DC009A1068 /* FaceView */,
 				1FFEC5661F6A6C77004D55A7 /* MyKeyboard */,
 				1FFEC5221F6A6093004D55A7 /* Resource */,
 				1FFEC4BB1F6A0FED004D55A7 /* MyClass */,
@@ -245,6 +368,8 @@
 				1FFEC4B01F6A07C0004D55A7 /* LaunchScreen.storyboard */,
 				1FFEC4B31F6A07C0004D55A7 /* Info.plist */,
 				1FFEC4A21F6A07BF004D55A7 /* Supporting Files */,
+				1FC4923D1F6CB840009A1068 /* Demo-Prefix.pch */,
+				1FC492421F6CBAD1009A1068 /* LinGlobalConfig.h */,
 			);
 			path = tuwenhunpaiDemo;
 			sourceTree = "<group>";
@@ -269,6 +394,18 @@
 		1FFEC4BA1F6A0FE5004D55A7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1FC492851F6CD18F009A1068 /* FaceViewDeleteIcon@2x.png */,
+				1FC492861F6CD18F009A1068 /* FaceViewDeleteIcon@3x.png */,
+				1FC492811F6CD182009A1068 /* life_facePanel@2x.png */,
+				1FC492821F6CD182009A1068 /* life_facePanel@3x.png */,
+				1FC4927D1F6CD16F009A1068 /* life_emojiPanel@2x.png */,
+				1FC4927E1F6CD16F009A1068 /* life_emojiPanel@3x.png */,
+				1FC492511F6CC025009A1068 /* life_addCommentDock_keyboard@2x.png */,
+				1FC492521F6CC025009A1068 /* life_addCommentDock_keyboard@3x.png */,
+				1FC4924D1F6CC015009A1068 /* life_addCommentDock_emoji@2x.png */,
+				1FC4924E1F6CC015009A1068 /* life_addCommentDock_emoji@3x.png */,
+				1FC492491F6CBFFE009A1068 /* life_post_selected_image@2x.png */,
+				1FC4924A1F6CBFFE009A1068 /* life_post_selected_image@3x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -389,6 +526,8 @@
 		1FFEC5661F6A6C77004D55A7 /* MyKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				1FC4923A1F6CB6F8009A1068 /* LinInputAccessoryView.h */,
+				1FC4923B1F6CB6F8009A1068 /* LinInputAccessoryView.m */,
 			);
 			path = MyKeyboard;
 			sourceTree = "<group>";
@@ -544,16 +683,21 @@
 				1FFEC55D1F6A6093004D55A7 /* 送礼物@2x.gif in Resources */,
 				1FFEC54F1F6A6093004D55A7 /* 哈哈@2x.gif in Resources */,
 				1FFEC5441F6A6093004D55A7 /* OK@2x.gif in Resources */,
+				1FC492831F6CD182009A1068 /* life_facePanel@2x.png in Resources */,
 				1FFEC5481F6A6093004D55A7 /* 你最棒@2x.gif in Resources */,
 				1FFEC54B1F6A6093004D55A7 /* 发红包了@2x.gif in Resources */,
 				1FFEC5541F6A6093004D55A7 /* 怒@2x.gif in Resources */,
 				1FFEC5461F6A6093004D55A7 /* 不明白@2x.gif in Resources */,
 				1FFEC54A1F6A6093004D55A7 /* 加油@2x.gif in Resources */,
+				1FC492841F6CD182009A1068 /* life_facePanel@3x.png in Resources */,
 				1FFEC5561F6A6093004D55A7 /* 晚安@2x.gif in Resources */,
 				1FFEC5621F6A6093004D55A7 /* LifeEmojiName.plist in Resources */,
+				1FC492541F6CC025009A1068 /* life_addCommentDock_keyboard@3x.png in Resources */,
+				1FC492881F6CD18F009A1068 /* FaceViewDeleteIcon@3x.png in Resources */,
 				1FFEC5531F6A6093004D55A7 /* 帮助@2x.gif in Resources */,
 				1FFEC5591F6A6093004D55A7 /* 爱心@2x.gif in Resources */,
 				1FFEC55B1F6A6093004D55A7 /* 萌萌哒@2x.gif in Resources */,
+				1FC492801F6CD16F009A1068 /* life_emojiPanel@3x.png in Resources */,
 				1FFEC4AF1F6A07C0004D55A7 /* Assets.xcassets in Resources */,
 				1FFEC54C1F6A6093004D55A7 /* 发货@2x.gif in Resources */,
 				1FFEC5601F6A6093004D55A7 /* 鸡冻@2x.gif in Resources */,
@@ -562,15 +706,22 @@
 				1FFEC55E1F6A6093004D55A7 /* 送花@2x.gif in Resources */,
 				1FFEC55F1F6A6093004D55A7 /* 郁闷@2x.gif in Resources */,
 				1FFEC59B1F6A858E004D55A7 /* IQKeyboardManager.bundle in Resources */,
+				1FC4924F1F6CC015009A1068 /* life_addCommentDock_emoji@2x.png in Resources */,
+				1FC4927F1F6CD16F009A1068 /* life_emojiPanel@2x.png in Resources */,
 				1FFEC55A1F6A6093004D55A7 /* 生气@2x.gif in Resources */,
+				1FC492531F6CC025009A1068 /* life_addCommentDock_keyboard@2x.png in Resources */,
 				1FFEC5571F6A6093004D55A7 /* 汗@2x.gif in Resources */,
 				1FFEC5521F6A6093004D55A7 /* 帅不@2x.gif in Resources */,
 				1FFEC5611F6A6093004D55A7 /* LifeEmoji.plist in Resources */,
 				1FFEC5451F6A6093004D55A7 /* 不好意思@2x.gif in Resources */,
+				1FC492871F6CD18F009A1068 /* FaceViewDeleteIcon@2x.png in Resources */,
 				1FFEC5581F6A6093004D55A7 /* 烦@2x.gif in Resources */,
 				1FFEC5491F6A6093004D55A7 /* 再见@2x.gif in Resources */,
+				1FC4924C1F6CBFFE009A1068 /* life_post_selected_image@3x.png in Resources */,
 				1FFEC5511F6A6093004D55A7 /* 好消息@2x.gif in Resources */,
+				1FC492501F6CC015009A1068 /* life_addCommentDock_emoji@3x.png in Resources */,
 				1FFEC5471F6A6093004D55A7 /* 亲一个@2x.gif in Resources */,
+				1FC4924B1F6CBFFE009A1068 /* life_post_selected_image@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,19 +742,32 @@
 				1FFEC5911F6A858E004D55A7 /* IQUIViewController+Additions.m in Sources */,
 				1FFEC51E1F6A5C38004D55A7 /* UIImage+WebP.m in Sources */,
 				1FFEC4AA1F6A07BF004D55A7 /* ViewController.m in Sources */,
+				1FC4925D1F6CC3D2009A1068 /* FacialView.m in Sources */,
 				1FFEC5991F6A858E004D55A7 /* IQToolbar.m in Sources */,
+				1FC492641F6CC420009A1068 /* EmojiEmoticons.m in Sources */,
 				1FFEC5931F6A858E004D55A7 /* IQKeyboardManager.m in Sources */,
+				1FC4925C1F6CC3D2009A1068 /* DXFaceView.m in Sources */,
 				1FFEC5941F6A858E004D55A7 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				1FFEC51F1F6A5C38004D55A7 /* UIImageView+HighlightedWebCache.m in Sources */,
+				1FC492671F6CC518009A1068 /* LinFaceView.m in Sources */,
+				1FC4923C1F6CB6F8009A1068 /* LinInputAccessoryView.m in Sources */,
 				1FFEC5981F6A858E004D55A7 /* IQTitleBarButtonItem.m in Sources */,
+				1FC492411F6CBA72009A1068 /* UIColor+for16.m in Sources */,
 				1FFEC4C11F6A1230004D55A7 /* LinTextAttachment.m in Sources */,
 				1FFEC4A71F6A07BF004D55A7 /* AppDelegate.m in Sources */,
+				1FC492631F6CC420009A1068 /* Emoji.m in Sources */,
 				1FFEC59A1F6A858E004D55A7 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				1FC4926A1F6CC5B7009A1068 /* LinFaceViewCell.m in Sources */,
+				1FC4927C1F6CCB9A009A1068 /* UIImage+Compression.m in Sources */,
 				1FFEC51B1F6A5C38004D55A7 /* UIButton+WebCache.m in Sources */,
 				1FFEC51A1F6A5C38004D55A7 /* SDWebImagePrefetcher.m in Sources */,
+				1FC492791F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.m in Sources */,
 				1FFEC5181F6A5C38004D55A7 /* SDWebImageDownloaderOperation.m in Sources */,
 				1FFEC4CA1F6A18C9004D55A7 /* LinGifIamgeView.m in Sources */,
+				1FC4926D1F6CC649009A1068 /* LinFaceViewCellButton.m in Sources */,
 				1FFEC4C71F6A15ED004D55A7 /* LinEmojiTool.m in Sources */,
+				1FC492731F6CC813009A1068 /* UIImage+CreatedSingleColorImage.m in Sources */,
+				1FC492571F6CC2CF009A1068 /* LinFaceViewContainer.m in Sources */,
 				1FFEC58F1F6A858E004D55A7 /* IQUITextFieldView+Additions.m in Sources */,
 				1FFEC51D1F6A5C38004D55A7 /* UIImage+MultiFormat.m in Sources */,
 				1FFEC58E1F6A858E004D55A7 /* IQNSArray+Sort.m in Sources */,
@@ -614,7 +778,9 @@
 				1FFEC4BE1F6A102B004D55A7 /* LinHybridTextView.m in Sources */,
 				1FFEC51C1F6A5C38004D55A7 /* UIImage+GIF.m in Sources */,
 				1FFEC5651F6A6779004D55A7 /* NSString+Length.m in Sources */,
+				1FC492481F6CBBFA009A1068 /* UIView+Additon.m in Sources */,
 				1FFEC5171F6A5C38004D55A7 /* SDWebImageDownloader.m in Sources */,
+				1FC492761F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.m in Sources */,
 				1FFEC5921F6A858E004D55A7 /* IQUIWindow+Hierarchy.m in Sources */,
 				1FFEC5201F6A5C38004D55A7 /* UIImageView+WebCache.m in Sources */,
 				1FFEC5121F6A5C38004D55A7 /* MKAnnotationView+WebCache.m in Sources */,
@@ -684,7 +850,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -726,7 +892,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -738,7 +904,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tuwenhunpaiDemo/Demo-Prefix.pch";
 				INFOPLIST_FILE = tuwenhunpaiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.tuwenhunpaiDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -749,7 +918,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tuwenhunpaiDemo/Demo-Prefix.pch";
 				INFOPLIST_FILE = tuwenhunpaiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.tuwenhunpaiDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -775,6 +947,7 @@
 				1FFEC4B81F6A07C0004D55A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

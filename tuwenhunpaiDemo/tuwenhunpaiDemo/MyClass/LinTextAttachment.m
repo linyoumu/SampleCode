@@ -6,11 +6,8 @@
 //  Copyright © 2017年 Myfly. All rights reserved.
 //
 
-#define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
-#define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
-
 #import "LinTextAttachment.h"
-#import "NSAttributedString+ImageExtension.h"
+
 
 @implementation LinTextAttachment
 
