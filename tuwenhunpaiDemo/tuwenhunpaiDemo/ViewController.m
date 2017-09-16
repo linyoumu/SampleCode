@@ -26,6 +26,12 @@
     
     self.contentTextView.attributedText = [LinTextAttachment swapAttributeString:@"Dads [lyg]  [nzb]  [nzb] sdgdDads [lyg]  [nzb]  [nzb] sdgdDads [lyg]  [nzb]  [nzb] sdgd" gifNames:@[@"[lyg]",@"[nzb]",@"[nzb]",@"[lyg]",@"[nzb]",@"[nzb]",@"[lyg]",@"[nzb]",@"[nzb]"]];
     [self.contentTextView resetGifImageViews];
+    
+    //UIImage *emojiImage = [UIImage imageNamed:@"爱你@2x.gif"];
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 20, 100, 100)];
+//    imageView.backgroundColor = [UIColor redColor];
+//    imageView.image = emojiImage;
+//    [self.view addSubview:imageView];
 }
 
 
