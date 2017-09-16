@@ -15,10 +15,12 @@
 @protocol FacialViewDelegate
 
 @optional
+
 -(void)facialViewDidScrollToPage:(NSUInteger)page;
 -(void)selectedFacialView:(NSString*)str;
 -(void)deleteSelected:(NSString *)str;
 -(void)sendFace;
+
 @end
 
 
@@ -35,5 +37,6 @@
  
 @property (assign, nonatomic) NSUInteger totalPage;
 
-- (IBAction)scroll;
+- (void)scroll;
+
 @end

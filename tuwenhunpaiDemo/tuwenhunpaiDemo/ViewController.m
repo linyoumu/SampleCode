@@ -18,26 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = GlobalMainBackgroundGrayColor;
     
     [self.view addSubview:self.contentTextView];
     
-    self.contentTextView.attributedText = [LinTextAttachment swapAttributeString:@"Dads [lyg]  [nzb]  [nzb] sdgdDads [lyg]  [nzb]  [nzb] sdgdDads [lyg]  [nzb]  [nzb] sdgd" gifNames:@[@"[lyg]",@"[nzb]",@"[nzb]",@"[lyg]",@"[nzb]",@"[nzb]",@"[lyg]",@"[nzb]",@"[nzb]"]];
     [self.contentTextView resetGifImageViews];
-    
-    //UIImage *emojiImage = [UIImage imageNamed:@"爱你@2x.gif"];
-//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 20, 100, 100)];
-//    imageView.backgroundColor = [UIColor redColor];
-//    imageView.image = emojiImage;
-//    [self.view addSubview:imageView];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (LinHybridTextView *)contentTextView
@@ -51,7 +42,7 @@
         _contentTextView.font = [UIFont systemFontOfSize:16.0f];
         _contentTextView.layer.cornerRadius = 4.0f;
         _contentTextView.layer.masksToBounds = YES;
-        //_contentTextView.backgroundColor = [UIColor colorWithHex:0xf4f4f4];
+        _contentTextView.backgroundColor = [UIColor colorWithHex:0xf4f4f4];
         _contentTextView.layer.borderColor = [[UIColor clearColor] CGColor];
     }
     
@@ -64,15 +55,6 @@
 {
     [self.contentTextView resetGifImageViews];
     return YES;
-}
-
-- (void)textViewDidBeginEditing:(UITextView *)textView
-{
-}
-
-- (void)textViewDidEndEditing:(UITextView *)textView
-{
-    
 }
 
 - (void)textViewDidChange:(UITextView *)textView
@@ -91,6 +73,7 @@
     NSString *content = [self.contentTextView.text stringByAppendingString:text];
     BOOL result = YES;
     NSInteger charCount = [content contentCharCountOfString];
+    NSLog(@"------%ld",charCount);
     if (charCount > 20000) {
         result = NO;
     }

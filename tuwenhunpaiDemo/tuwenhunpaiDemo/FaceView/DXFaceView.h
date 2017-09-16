@@ -32,6 +32,7 @@
 
 @interface DXFaceView : UIView <FacialViewDelegate>
 
+@property (assign, nonatomic, readonly) NSUInteger totalPage;
 @property (nonatomic, assign) id<DXFaceDelegate> delegate;
 @property (weak, nonatomic) id<DXFaceViewDelegateForContainer> delegateForContainer;
 
@@ -39,6 +40,6 @@
 - (NSUInteger)indexOfFaces:(NSString *)string;
 - (NSString *)faceStringAtIndex:(NSUInteger)index;
 
-@property (assign, nonatomic, readonly) NSUInteger totalPage;
-- (IBAction)scroll;
+- (void)scroll;
+
 @end

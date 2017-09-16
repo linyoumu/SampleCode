@@ -95,7 +95,6 @@
         _faceArray = [NSMutableArray array];
         
         // 加载源数据
-        //        NSArray *originalArray = [self.facePlistDic allKeys];
         NSArray *originalArray = @[ @"[nzb]", @"[lyg]", @"[slw]", @"[haha]", @"[mmd]", @"[hxx]", @"[sh]", @"[jy]", @"[ok]", @"[ax]", @"[bz]", @"[bhys]", @"[bmb]", @"[dai]", @"[fhbl]", @"[fh]", @"[fan]", @"[han]", @"[jd]", @"[jx]", @"[nu]", @"[sq]", @"[sb]", @"[wa]", @"[xia]", @"[xx]", @"[ym]", @"[yun]", @"[zj]"];
         
         // 分组
@@ -107,8 +106,6 @@
             for (NSUInteger j = i*countPerPage; j<(i+1)*countPerPage; j++) {
                 [tempfaceArray addObject:originalArray[j]];
             }
-            //            [tempfaceArray addObject:@"[hug]"];
-            //            [tempfaceArray addObject:@"[hug]"];
             [_faceArray addObject:tempfaceArray];
         }
         // 最后一组
@@ -117,8 +114,7 @@
             for (NSUInteger i = pages*countPerPage; i<originalArray.count; i++) {
                 [tempfaceArray addObject:originalArray[i]];
             }
-            //            [tempfaceArray addObject:@"[hug]"];
-            //            [tempfaceArray addObject:@"[hug]"];
+
             [_faceArray addObject:tempfaceArray];
         }
     }

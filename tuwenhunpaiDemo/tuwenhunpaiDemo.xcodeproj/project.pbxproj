@@ -226,8 +226,8 @@
 		1FFEC4BD1F6A102B004D55A7 /* LinHybridTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinHybridTextView.m; sourceTree = "<group>"; };
 		1FFEC4BF1F6A1230004D55A7 /* LinTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinTextAttachment.h; sourceTree = "<group>"; };
 		1FFEC4C01F6A1230004D55A7 /* LinTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinTextAttachment.m; sourceTree = "<group>"; };
-		1FFEC4C21F6A141D004D55A7 /* NSAttributedString+ImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+ImageExtension.h"; sourceTree = "<group>"; };
-		1FFEC4C31F6A141D004D55A7 /* NSAttributedString+ImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+ImageExtension.m"; sourceTree = "<group>"; };
+		1FFEC4C21F6A141D004D55A7 /* NSAttributedString+ImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+ImageExtension.h"; path = "../MyClass/NSAttributedString+ImageExtension.h"; sourceTree = "<group>"; };
+		1FFEC4C31F6A141D004D55A7 /* NSAttributedString+ImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+ImageExtension.m"; path = "../MyClass/NSAttributedString+ImageExtension.m"; sourceTree = "<group>"; };
 		1FFEC4C51F6A15ED004D55A7 /* LinEmojiTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinEmojiTool.h; sourceTree = "<group>"; };
 		1FFEC4C61F6A15ED004D55A7 /* LinEmojiTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinEmojiTool.m; sourceTree = "<group>"; };
 		1FFEC4C81F6A18C9004D55A7 /* LinGifIamgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinGifIamgeView.h; sourceTree = "<group>"; };
@@ -296,8 +296,8 @@
 		1FFEC5411F6A6093004D55A7 /* 鸡冻@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "鸡冻@2x.gif"; sourceTree = "<group>"; };
 		1FFEC5421F6A6093004D55A7 /* LifeEmoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LifeEmoji.plist; sourceTree = "<group>"; };
 		1FFEC5431F6A6093004D55A7 /* LifeEmojiName.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LifeEmojiName.plist; sourceTree = "<group>"; };
-		1FFEC5631F6A6779004D55A7 /* NSString+Length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Length.h"; sourceTree = "<group>"; };
-		1FFEC5641F6A6779004D55A7 /* NSString+Length.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Length.m"; sourceTree = "<group>"; };
+		1FFEC5631F6A6779004D55A7 /* NSString+Length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Length.h"; path = "../MyClass/NSString+Length.h"; sourceTree = "<group>"; };
+		1FFEC5641F6A6779004D55A7 /* NSString+Length.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Length.m"; path = "../MyClass/NSString+Length.m"; sourceTree = "<group>"; };
 		1FFEC56B1F6A858E004D55A7 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		1FFEC56C1F6A858E004D55A7 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		1FFEC56D1F6A858E004D55A7 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
@@ -358,12 +358,17 @@
 				1FC4926B1F6CC649009A1068 /* LinFaceViewCellButton.h */,
 				1FC4926C1F6CC649009A1068 /* LinFaceViewCellButton.m */,
 			);
-			path = FaceView;
+			name = FaceView;
+			path = ../FaceView;
 			sourceTree = "<group>";
 		};
 		1FC4923E1F6CB8EE009A1068 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				1FFEC5631F6A6779004D55A7 /* NSString+Length.h */,
+				1FFEC5641F6A6779004D55A7 /* NSString+Length.m */,
+				1FFEC4C21F6A141D004D55A7 /* NSAttributedString+ImageExtension.h */,
+				1FFEC4C31F6A141D004D55A7 /* NSAttributedString+ImageExtension.m */,
 				1FC492771F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.h */,
 				1FC492781F6CCB1B009A1068 /* NSMutableAttributedString+TextAttachment.m */,
 				1FC492741F6CC8FA009A1068 /* UIView+FSNewFrameLayoutView.h */,
@@ -447,8 +452,6 @@
 			isa = PBXGroup;
 			children = (
 				1FC4923E1F6CB8EE009A1068 /* category */,
-				1FC492391F6CB5DC009A1068 /* FaceView */,
-				1FFEC5661F6A6C77004D55A7 /* MyKeyboard */,
 				1FFEC5221F6A6093004D55A7 /* Resource */,
 				1FFEC4BB1F6A0FED004D55A7 /* MyClass */,
 				1FFEC4BA1F6A0FE5004D55A7 /* images */,
@@ -507,18 +510,15 @@
 		1FFEC4BB1F6A0FED004D55A7 /* MyClass */ = {
 			isa = PBXGroup;
 			children = (
+				1FFEC5661F6A6C77004D55A7 /* MyKeyboard */,
 				1FFEC4BC1F6A102B004D55A7 /* LinHybridTextView.h */,
 				1FFEC4BD1F6A102B004D55A7 /* LinHybridTextView.m */,
 				1FFEC4BF1F6A1230004D55A7 /* LinTextAttachment.h */,
 				1FFEC4C01F6A1230004D55A7 /* LinTextAttachment.m */,
-				1FFEC4C21F6A141D004D55A7 /* NSAttributedString+ImageExtension.h */,
-				1FFEC4C31F6A141D004D55A7 /* NSAttributedString+ImageExtension.m */,
 				1FFEC4C51F6A15ED004D55A7 /* LinEmojiTool.h */,
 				1FFEC4C61F6A15ED004D55A7 /* LinEmojiTool.m */,
 				1FFEC4C81F6A18C9004D55A7 /* LinGifIamgeView.h */,
 				1FFEC4C91F6A18C9004D55A7 /* LinGifIamgeView.m */,
-				1FFEC5631F6A6779004D55A7 /* NSString+Length.h */,
-				1FFEC5641F6A6779004D55A7 /* NSString+Length.m */,
 			);
 			path = MyClass;
 			sourceTree = "<group>";
@@ -621,10 +621,12 @@
 		1FFEC5661F6A6C77004D55A7 /* MyKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				1FC492391F6CB5DC009A1068 /* FaceView */,
 				1FC4923A1F6CB6F8009A1068 /* LinInputAccessoryView.h */,
 				1FC4923B1F6CB6F8009A1068 /* LinInputAccessoryView.m */,
 			);
-			path = MyKeyboard;
+			name = MyKeyboard;
+			path = ../MyKeyboard;
 			sourceTree = "<group>";
 		};
 		1FFEC5691F6A858E004D55A7 /* IQKeyBoardManager */ = {

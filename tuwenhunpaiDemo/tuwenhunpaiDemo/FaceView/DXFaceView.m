@@ -90,7 +90,7 @@
     return _facialView.totalPage;
 }
 
-- (IBAction)scroll
+- (void)scroll
 {
     [_facialView scroll];
 }

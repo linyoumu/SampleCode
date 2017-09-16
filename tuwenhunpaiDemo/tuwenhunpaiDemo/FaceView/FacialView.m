@@ -118,7 +118,7 @@
 }
 
 #pragma mark - For PageControl
-- (IBAction)scroll
+- (void)scroll
 {
     [self scrollViewDidScroll:self.scrollView];
 }
