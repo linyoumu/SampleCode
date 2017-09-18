@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <style type="text/css">
+            html
+            {
+                font-size:62.5%;
+                height:100%;
+            }
+            img
+            {
+                /* display:block; */
+                max-width:100%;
+                margin:auto;
+            }
+            blockquote
+            {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                line-height:180%;background-color:#fff;color:#3d3d3d;font-family:"microsoft yahei";/* width:359px;*//* 整体宽度 */font-size:1.65rem;
+            }
+            var, em, i {font-style:normal;}
+            h1, h2, h3, h4, h5, h6 {margin:0;font-size:inherit;}
+            img {vertical-align:inherit;}
+            ul {list-style:none;padding:0;margin:0;}
+            p {margin:0px;/* 调整左间距 */ color:#3d3d3d; font-family:"microsoft yahei";font-size: 1.65rem}
+            .body{ min-width: 300px; max-width: 640px; height: auto; margin:auto;}
+            .article { padding: 5rem 2rem 2rem; line-height:160%}
+            .article .article_title { line-height: 160%; font-size: 2.2rem; color: #333; font-weight: 400; }
+            .article img { margin: 3rem 0; width:100%; height: 100%; }
+            .article .article_list { padding-bottom: 3rem; line-height: 160%; font-size: 1.65rem; color: #515151; }
+            @media screen and (max-width:330px){
+                .article .article_title { line-height: 160%; font-size: 1.65rem; color: #333; font-weight: 400; }
+            }
+            .bgBoxBefore{overflow:hidden;background:#f5f8fa;background-size:120px 120px;background-repeat:no-repeat;background-position:center;text-align:center;}
+            .bgBoxBeforeForVideo{position:relative;overflow:hidden;background:#f5f8fa;background-size:120px 120px;background-repeat:no-repeat;background-position:center;text-align:center;}
+            .bgBoxAfter{position:relative;overflow:hidden;text-align:center;}
+            .playBtn{position:absolute;{playbtnleftandtop}width:48px;height:48px;transform:-webkit-translate(-50%,-50%);transform:-moz-translate(-50%,-50%);transform:translate(-50%,-50%)}
+        </style>
+    </head>
+    <body>
+        <p>mainnews</p>
+        <script>
+        function setRealImage(message) {
+            var index = message.indexOf("-TTTT-")
+            var messagereplace = message.substring(0,index)
+            var messagepath = message.substring(index+6)
+            var element = document.getElementById(messagereplace)
+            element.src = messagepath
+            element.id = "set" + messagereplace // 置其id为set前缀，防止同页面有相同的url，导致一直赋值给第一张图
+            var divelement = document.getElementById("div"+messagereplace)
+                divelement.className = "bgBoxAfter"
+        }
+        
+        function onImageClick(element) {
+            var x = 0
+            var y = 0
+            x = element.getBoundingClientRect().left;
+            y = element.getBoundingClientRect().top;
+            x = x + document.documentElement.scrollLeft;
+            y = y + document.documentElement.scrollTop;
+            width = element.width;
+            height = element.height;
+            document.location = "browserimage://" + element.getAttribute("sssrc") + "-TTTT-" + "x-" + x +"&y-" + y + "&w-" + element.width + "&h-" + element.height
+            window.webkit.messageHandlers.browserimage.postMessage(element.getAttribute("sssrc") + "-TTTT-" + "x-" + x +"&y-" + y + "&w-" + element.width + "&h-" + element.height);
+        }
+        
+        function onVideoPlayBtn(url) {
+            console.log(url);
+            var element = document.getElementById("set" + url);
+            if (!element) {
+                element = document.getElementById(url);
+            }
+            if (element) {
+                element.click()
+            }
+        }
+        
+        function setRestartImage(message) {
+            var index = message.indexOf(",")
+            var messagereplace = message.substring(0,index)
+            var messagepath = message.substring(index+1)
+            var element = document.getElementById(messagereplace)
+            element.src = messagepath
+            
+            element.onclick = function() {
+                document.location = "restartdownload://" + messagereplace
+                window.webkit.messageHandlers.restartdownload.postMessage(messagereplace);
+            }
+        }
+        
+        function getImagesLocation() {
+            var img = document.getElementsByTagName("img")
+            var rects = ""
+            for (var i = 0;i < img.length;i ++) {
+                rects = rects + "id-" + img[i].id + "&x-" + img[i].offsetLeft +"&y-" + img[i].offsetTop + "&w-" + img[i].width + "&h-" + img[i].height
+                if (i != img.length - 1) {
+                    rects += "-TTTT-"
+                }
+            }
+            document.location = "imgslocation://" + rects
+            window.webkit.messageHandlers.imgslocation.postMessage(rects);
+        }
+    </script>
+  </body>
+</html>
